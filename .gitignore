@@ -1,0 +1,76 @@
+# ===== PYTHON / DJANGO =====
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.db
+*.db-journal
+*.mo
+
+# Django-specific
+/staticfiles/
+media/
+.env
+.env.*
+*.env
+*.secret
+config/__pycache__/
+api/__pycache__/
+db.sqlite3
+*.bak
+*.swp
+
+# VSCode & IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Migrations (optional – keep them if you want history)
+*/migrations/__pycache__/
+# Uncomment this next line if you don't want to track migrations:
+# */migrations/
+
+# Byte-compiled / cached
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local virtualenvs
+venv/
+env/
+ENV/
+.env/
+*.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# ===== FRONTEND =====
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+frontend/.DS_Store
+
+# ===== GIT / LOGS =====
+*.log
+*.pot
+*.pid
+*.seed
+*.cover
+*.log
+*.sql
+*.sqlite3
+
+# ===== OTHERS =====
+# Backup files
+*.bak
+*.tmp
+*.swp
