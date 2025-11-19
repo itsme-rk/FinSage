@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from django.contrib.auth import get_user_model
 from rest_framework import generics,viewsets, permissions
-from .serializers import UserSerializer
+from .serializers import UserSerializer, CustomTokenObtainPairSerializer
 from rest_framework.permissions import IsAuthenticated,AllowAny
+from rest_framework_simplejwt.views import TokenObtainPairView
 from .models import Expense
 from .serializers import ExpenseSerializer
 from .permissions import IsOwnerOrAdmin
@@ -14,6 +15,9 @@ from datetime import datetime
 # Create your views here.
 
 User = get_user_model()
+
+class CustomTokenObtainPairView(TokenObtainPairView):
+    serializer_class = CustomTokenObtainPairSerializer
 
 #end point: /users/
 class CreateUserView(generics.CreateAPIView):
