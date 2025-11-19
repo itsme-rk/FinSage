@@ -7,6 +7,7 @@ import Register from "./src/pages/Register";
 import Home from "./src/pages/Home";
 import NotFound from "./src/pages/NotFound";
 import ProtectedRoute from "./src/components/ProtectedRoute";
+import AdminProtectedRoute from "./src/components/AdminProtectedRoute";
 import Navbar from "./src/components/Navbar";
 import Expenses from "./src/pages/Expenses";
 import AdminPanel from "./src/pages/AdminPanel";
@@ -42,9 +43,9 @@ function App() {
 					<Route
 						path="/admin"
 						element={
-							<ProtectedRoute>
+							<AdminProtectedRoute>
 								<AdminPanel />
-							</ProtectedRoute>
+							</AdminProtectedRoute>
 						}
 					/>
 					<Route path="/login" element={<Login />} />
